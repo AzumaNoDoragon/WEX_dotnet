@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 
-namespace ExemplosFundamentos.Models
+namespace ExemploFundamentos.Common.Models
 {
     public class Pessoa
     {
@@ -12,7 +12,7 @@ namespace ExemplosFundamentos.Models
 
         public void Apresentar()
         {
-            Console.WriteLine($"Olá, meu nome é {Nome} e tenho {Idade} anos");
+            Console.WriteLine($"Olá! Meu nome é {Nome} e tenho {Idade} anos!");
         }
     }
 }
