@@ -1,8 +1,17 @@
 ﻿using ExemploFundamentos.Common.Models;
 
-Pessoa p = new Pessoa();
+Pessoa p1 = new Pessoa();
+p1.Nome = "Gabriel";
+p1.Sobrenome = "Santos Afini da Silva";
 
-p.Nome = "Gabriel";
-p.Sobrenome = "Santos Afini da Silva";
-p.Idade = 20;
-p.Apresentar();
+Pessoa p2 = new Pessoa();
+p2.Nome = "Jose";
+p2.Sobrenome = "Andrade";
+
+Curso curso = new Curso();
+curso.Nome = "Ingles";
+curso.Alunos = new List<Pessoa>();
+
+curso.AdicionarAluno(p1);
+curso.AdicionarAluno(p2);
+curso.ListarAlunos();

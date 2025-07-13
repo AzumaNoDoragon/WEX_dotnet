@@ -8,7 +8,7 @@
     <OutputType>Exe</OutputType>
     <TargetFramework>net8.0</TargetFramework>
     <ImplicitUsings>enable</ImplicitUsings>
-    <Nullable>enable</Nullable>
+    <Nullable>disable</Nullable>
     <UserSecretsId>d3494525-a268-461c-acad-694011133d58</UserSecretsId>
   </PropertyGroup>
 
