@@ -2,6 +2,7 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Runtime.CompilerServices;
+using System.Security.Authentication;
 using System.Threading.Tasks;
 
 namespace ExemploFundamentos.Common.Models
@@ -29,9 +30,10 @@ namespace ExemploFundamentos.Common.Models
         public void ListarAlunos()
         {
             Console.WriteLine($"Alunos do curso de: {Nome}");
-            foreach (Pessoa aluno in Alunos)
+            for (int i = 0; i < Alunos.Count; i++)
             {
-                Console.WriteLine(aluno.NomeCompleto);
+                string text = "Nº " + (i +1 ) + " - " + Alunos[i].NomeCompleto;
+                Console.WriteLine(text);
             }
         }
     }

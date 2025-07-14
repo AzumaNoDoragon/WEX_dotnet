@@ -1,12 +1,8 @@
 ﻿using ExemploFundamentos.Common.Models;
 
-Pessoa p1 = new Pessoa();
-p1.Nome = "Gabriel";
-p1.Sobrenome = "Santos Afini da Silva";
+Pessoa p1 = new Pessoa("Gabriel", "Santos Afini da Silva");
 
-Pessoa p2 = new Pessoa();
-p2.Nome = "Jose";
-p2.Sobrenome = "Andrade";
+Pessoa p2 = new Pessoa("Jose", "Andrade");
 
 Curso curso = new Curso();
 curso.Nome = "Ingles";
@@ -14,4 +10,6 @@ curso.Alunos = new List<Pessoa>();
 
 curso.AdicionarAluno(p1);
 curso.AdicionarAluno(p2);
+curso.ListarAlunos();
+curso.RemoverAluno(p1);
 curso.ListarAlunos();
