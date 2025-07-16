@@ -8,6 +8,18 @@ namespace ExemploFundamentos.Models
 {
     public class Professor : Pessoa
     {
+        /// <summary>
+        /// Instancia de Professor
+        /// </summary>
+        /// <param name="nome"></param>
+        /// <param name="sobrenome"></param>
+        /// <param name="idade"></param>
+        /// <param name="id"></param>
+        public Professor(string nome, string sobrenome, int idade, int id, decimal salario) : base(nome, sobrenome, idade, id)
+        {
+            Salario = salario;
+        }
+
         public decimal Salario { get; set; }
 
         public override void Id(int value)

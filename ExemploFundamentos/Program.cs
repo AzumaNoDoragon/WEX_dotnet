@@ -1,17 +1,9 @@
 ﻿using ExemploFundamentos.Common.Models;
 using ExemploFundamentos.Models;
 
-Aluno a1 = new Aluno();
-a1.Nome = "Gabriel";
-a1.Idade = 20;
-a1.Nota = 7;
-a1.Id(2267);
+Aluno a1 = new Aluno("Gabriel", "Afini", 20, 2267, 8.5);
 
-Professor p1 = new Professor();
-p1.Nome = "Brenda";
-p1.Idade = 25;
-p1.Salario = 4000.20M;
-p1.Id(2222);
+Professor p1 = new Professor("Brenda", "Acioli", 25, 2222, 4000.20M);
 
 a1.Apresentar();
 Console.WriteLine("--------");

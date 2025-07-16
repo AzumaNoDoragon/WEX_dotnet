@@ -12,15 +12,12 @@ namespace ExemploFundamentos.Common.Models
     /// </summary>
     public abstract class Pessoa
     {
-        public Pessoa()
-        {
-            
-        }
-
-        public Pessoa(string nome, string sobrenome)
+        public Pessoa(string nome, string sobrenome, int idade, int id)
         {
             Nome = nome;
             Sobrenome = sobrenome;
+            Idade = idade;
+            Id(id);
         }
 
         private string _nome = "";
