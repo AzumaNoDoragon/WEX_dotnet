@@ -5,13 +5,16 @@ Aluno a1 = new Aluno();
 a1.Nome = "Gabriel";
 a1.Idade = 20;
 a1.Nota = 7;
+a1.Id(2267);
 
 Professor p1 = new Professor();
 p1.Nome = "Brenda";
 p1.Idade = 25;
 p1.Salario = 4000.20M;
+p1.Id(2222);
 
 a1.Apresentar();
+Console.WriteLine("--------");
 p1.Apresentar();
 
 // Pessoa p1 = new Pessoa("Gabriel", "Santos Afini da Silva");
