@@ -75,7 +75,7 @@ namespace ExemploFundamentos.Common.Models
         /// <summary>
         /// Faz a pessoa se apresentar, dizendo nome e idade
         /// </summary>
-        public void Apresentar()
+        public virtual void Apresentar()
         {
             Console.WriteLine($"Olá! Meu nome é {NomeCompleto} e tenho {Idade} anos!");
         }
