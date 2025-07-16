@@ -6,7 +6,7 @@ using ExemploFundamentos.Common.Models;
 
 namespace ExemploFundamentos.Models
 {
-    public class Professor : Pessoa
+    public sealed class Professor : Pessoa
     {
         /// <summary>
         /// Instancia de Professor
