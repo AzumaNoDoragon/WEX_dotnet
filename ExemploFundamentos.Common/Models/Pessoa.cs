@@ -10,7 +10,7 @@ namespace ExemploFundamentos.Common.Models
     /// <summary>
     /// Representa uma pessoa física
     /// </summary>
-    public class Pessoa
+    public abstract class Pessoa
     {
         public Pessoa()
         {
@@ -26,6 +26,7 @@ namespace ExemploFundamentos.Common.Models
         private string _nome = "";
         private string _sobrenome = "";
         private int _idade;
+        protected int _id;
 
         public string Nome
         {
@@ -71,6 +72,8 @@ namespace ExemploFundamentos.Common.Models
                 _idade = value;
             }
         }
+
+        public abstract void Id(int value);
 
         /// <summary>
         /// Faz a pessoa se apresentar, dizendo nome e idade
