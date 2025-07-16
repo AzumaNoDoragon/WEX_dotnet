@@ -4,13 +4,14 @@ using System.Linq;
 using System.Reflection.Metadata.Ecma335;
 using System.Security.Cryptography.X509Certificates;
 using System.Threading.Tasks;
+using ExemploFundamentos.Common.Interfaces;
 
 namespace ExemploFundamentos.Common.Models
 {
     /// <summary>
     /// Representa uma pessoa física
     /// </summary>
-    public abstract class Pessoa
+    public abstract class Pessoa : IPessoa
     {
         public Pessoa(string nome, string sobrenome, int idade, int id)
         {
