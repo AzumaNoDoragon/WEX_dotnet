@@ -1,9 +1,10 @@
-﻿using ExemploFundamentos.Common.Models;
+﻿using ExemploFundamentos.Common.Interfaces;
+using ExemploFundamentos.Common.Models;
 using ExemploFundamentos.Models;
 
-Aluno a1 = new Aluno("Gabriel", "Afini", 20, 2267, 8.5);
+IPessoa a1 = new Aluno("Gabriel", "Afini", 20, 2267, 8.5);
 
-Professor p1 = new Professor("Brenda", "Acioli", 25, 2222, 4000.20M);
+IPessoa p1 = new Professor("Brenda", "Acioli", 25, 2222, 4000.20M);
 
 a1.Apresentar();
 Console.WriteLine("--------");
