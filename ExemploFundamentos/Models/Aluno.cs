@@ -10,10 +10,15 @@ namespace ExemploFundamentos.Models
     {
         public double Nota { get; set; }
 
+        public override void Id(int value)
+        {
+            _id = value;
+        }
+
         public override void Apresentar()
         {
             base.Apresentar();
-            Console.WriteLine($"Sou aluno e minha nota é {Nota}");
+            Console.WriteLine($"Sou aluno e minha nota é {Nota}, RA: {_id}");
         }
     }
 }
