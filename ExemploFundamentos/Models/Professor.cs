@@ -10,10 +10,15 @@ namespace ExemploFundamentos.Models
     {
         public decimal Salario { get; set; }
 
+        public override void Id(int value)
+        {
+            _id = value;
+        }
+
         public override void Apresentar()
         {
             base.Apresentar();
-            Console.WriteLine($"Sou professor e meu salario é {Salario}");
+            Console.WriteLine($"Sou professor e meu salario é {Salario}, siape {_id}");
         }
     }
 }
